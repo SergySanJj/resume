@@ -64,15 +64,16 @@
             position: absolute;
             display: block;
             float: left;
-      
+
             top: 85px;
             left: 14vw;
-            
+
             width: 70vw;
-            min-height: 60vh;
+            height: fit-content;
 
             margin: 0%;
             padding: 3%;
+            padding-top: 0%;
 
             background: linear-gradient(to bottom, rgb(89, 89, 89) 0%, rgb(130, 130, 130) 100%);
 
@@ -83,6 +84,8 @@
         }
 
         .info {
+            padding: 0;
+            margin: 0;
             display: block;
             width: 100%;
             float: left;
@@ -97,6 +100,7 @@
             font-size: 18pt;
             font-weight: bolder;
             margin: 0;
+            padding-top: 10px;
         }
 
         .skills {
@@ -106,12 +110,53 @@
             padding: 0;
         }
 
+
+
         ul {
-            padding-top: 0;
-            padding-right: 50px;
+            width: fit-content;
+            height: 150px;
+            padding-top: 0px;
+            padding-right: 20px;
             float: left;
             margin: 0;
         }
+
+        ul.inline {
+            padding-top: 0px;
+        }
+
+        ul.inline>li {
+            float: left;
+        }
+
+        .edu-block {
+            display: block;
+            max-width: 300px;
+        }
+
+        p.uni {
+            padding: 0;
+            margin: 0;
+            font-size: 15pt;
+            font-weight: bolder;
+        }
+
+        p.degree {
+            padding: 0;
+            margin: 0;
+            font-size: 14pt;
+        }
+
+        ul.lang {
+            width: 100%;
+            height: fit-content;
+            float: left;
+        }
+
+        ul.lang>li {
+            list-style: circle;
+        }
+
     </style>
     <title>Sergei Yarema</title>
 </head>
@@ -123,8 +168,9 @@
     </header>
     <div class="content">
         <div class="info">
-            <img src="images/profile.jpg" class="profile">
-            E-mail: <a href="sergei.yaremawork@gmail.com">sergei.yaremawork@gmail.com</a>
+            <img src="images/profile.jpg" class="profile"><br><br>
+            E-mail: <a href="sergei.yaremawork@gmail.com">sergei.yaremawork@gmail.com</a><br>
+            Github: <a href="https://github.com/SergySanJj">SergySanJj</a>
         </div>
 
         <div class="skills">
@@ -134,14 +180,49 @@
                     <li>C++</li>
                     <li>C#</li>
                     <li>Python</li>
+                    <li>SQL</li>
                 </ul>
-                <ul> 
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
+                <ul>Engines and Frameworks
+                    <li>Qt</li>
+                    <li>Unity</li>
+                    <li>Cocos 2D</li>
+                </ul>
+                <ul>Methodologies
+                    <li>OOP</li>
+                    <li>UML</li>
+                    <li>Design Patterns</li>
+                </ul>
+                <ul>Technologies
+                    <li>Git</li>
+                    <li>Googletest</li>
                 </ul>
             </span>
+
+
+        </div>
+        <div class="skills">
+            <h2>Languages: </h2>
+            <ul class="lang">
+                <li>Russian, Ukrainian (native)</li>
+                <li>English (Upper-Intermediate)</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Education</h2><br>
+            <ul class="inline">
+                <li>
+                    <div class="edu-block">
+                        <p class="uni">Taras Shevchenko National University of Kyiv</p>
+                        <p class="degree">bachelor's degree Software Engineering 2017 – 2021</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-block">
+                        <p class="uni">Ukrainian Physics and Mathematics Lyceum</p>
+                    </div>
+                </li>
+            </ul>
 
         </div>
     </div>
