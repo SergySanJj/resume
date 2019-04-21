@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway" rel="stylesheet">
+    <!---->
+
+    <style>
+        body {
+            background-color: rgb(58, 58, 58);
+            font-size: 16pt;
+            font-family: 'Nunito Sans', sans-serif;
+            color: whitesmoke;
+        }
+
+        .profile {
+            min-width: 120px;
+            min-height: 120px;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+            border: solid whitesmoke 0.15vw;
+
+            margin: 2vw;
+
+            float: left;
+        }
+
+        header {
+            position: absolute;
+            display: block;
+            top: 0%;
+            left: 5vw;
+
+            width: 90vw;
+            height: 80px;
+
+
+            margin: 0%;
+            padding: 0%;
+
+            background-color: rgb(77, 77, 77);
+
+            border-top-left-radius: 0vw;
+            border-top-right-radius: 0vw;
+            border-bottom-left-radius: 2vw;
+            border-bottom-right-radius: 2vw;
+            border-width: 0;
+        }
+
+        h1 {
+            font-size: 22pt;
+            color: aliceblue;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
+        .content {
+            position: absolute;
+            display: block;
+            float: left;
+      
+            top: 85px;
+            left: 14vw;
+            
+            width: 70vw;
+            min-height: 60vh;
+
+            margin: 0%;
+            padding: 3%;
+
+            background: linear-gradient(to bottom, rgb(89, 89, 89) 0%, rgb(130, 130, 130) 100%);
+
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            border-bottom-right-radius: 2vw;
+        }
+
+        .info {
+            display: block;
+            width: 100%;
+            float: left;
+            font-size: 14pt;
+        }
+
+        a {
+            color: rgb(235, 235, 235);
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: bolder;
+            margin: 0;
+        }
+
+        .skills {
+            display: block;
+            width: 100%;
+            float: left;
+            padding: 0;
+        }
+
+        ul {
+            padding-top: 0;
+            padding-right: 50px;
+            float: left;
+            margin: 0;
+        }
+    </style>
     <title>Sergei Yarema</title>
 </head>
+
+
 <body>
-    
+    <header>
+        <h1>Sergei Yarema</h1>
+    </header>
+    <div class="content">
+        <div class="info">
+            <img src="images/profile.jpg" class="profile">
+            E-mail: <a href="sergei.yaremawork@gmail.com">sergei.yaremawork@gmail.com</a>
+        </div>
+
+        <div class="skills">
+            <h2>Skill Highlights</h2><br>
+            <span>
+                <ul>Programming languages
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ul>
+                <ul> 
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                </ul>
+            </span>
+
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
